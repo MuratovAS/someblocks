@@ -1,3 +1,10 @@
+# This is a fork of [kolunmi/dwlb](https://github.com/kolunmi/dwlb)  
+Things I changed:
+1. Blocks are executed asynchronously
+2. When block output is empty dont add delim to output
+3. Changed blocks
+
+
 # someblocks
 Modular status bar for [somebar](https://git.sr.ht/~raphi/somebar) written in c.
 
