@@ -198,6 +198,8 @@ int main(int argc, char** argv)
 			writestatus = pstdout;
 		else if (!strcmp("-s",argv[i]))
 			strcpy(somebarPath, argv[++i]);
+        else if (!strcmp("-m",argv[i]))
+            somebarFd = atoi(argv[++i]);
 	}
 
 	if (!strlen(somebarPath)) {
