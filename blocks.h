@@ -12,9 +12,9 @@ static const Block blocks[] = {
 	{"^lm()^lm($TERM htop)󰍛 ", "echo \"$[100-$(vmstat 1 1 | tail -1 | awk '{print $15}')]\"%",	3,		0},
 	{"^lm()^lm(pkill -RTMIN+5 someblocks;light -A 5)^rm(pkill -RTMIN+5 someblocks;light -U 5)󰃟 ", "light | cut -f1 -d '.' | tr -d '\n' ; echo '%'",		15,		5},
 	{"^lm()^rm()󰂀 ", "cat /sys/class/power_supply/BAT0/capacity | tr -d '\n'; echo '%'",					30,		0},
-	{"^lm()^lm($TERM pulsemixer)^rm(pamixer -t)󰕾 ", "pamixer --get-volume-human",					30,		0},
+	{"^lm()^lm($TERM pulsemixer)^rm(pamixer -t)󰕾 ", "pamixer --get-volume-human",					10,		0},
 	{"^lm()^rm() ", "cat /tmp/dwl-keymap",					0,		10},
-	{"", "$HOME/.local/bin/tray.sh",					30,		8},
+	{"", "$HOME/.local/bin/tray.sh",					15,		8},
 	{"^lm()^lm($TERM khal interactive)", "date '+%d/%m %H:%M'",					30,		0},
 	// TODO: network, bluetooth, sunset, slip
 };
