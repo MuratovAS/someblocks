@@ -12,7 +12,7 @@ static const Block blocks[] = {
 	{"^lm()^rm()󰂀 ", "cat /sys/class/power_supply/BAT0/capacity | tr -d '\n'; echo '%'",					30,		0},
 	{"^lm()^lm($TERM pulsemixer)^rm(pamixer -t)󰕾 ", "pamixer --get-volume-human",					10,		0},
 	//{"^lm()^rm() ", "cat /tmp/dwl-keymap",					0,		10},
-	{"", "$HOME/.local/bin/tray.sh",					15,		8},
+	{"^lm()^rm()", "$HOME/.local/bin/tray.sh",					15,		8},
 	{"^lm()^lm($TERM khal interactive)", "date '+%d/%m %H:%M'",					30,		0},
 };
 
